@@ -33,73 +33,177 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <View
-        android:id="@+id/sign_up_nickname_underscore_view"
-        android:layout_width="0dp"
-        android:layout_height="1px"
-        android:background="#a8a8a8"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="450dp" />
-
     <TextView
+        android:id="@+id/id_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:text="ID:"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="250dp" />
-
-    <View
-        android:id="@+id/sign_up_nickname_underscore_view"
-        android:layout_width="0dp"
-        android:layout_height="1px"
-        android:background="#a8a8a8"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="386dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="356dp" />
 
     <TextView
+        android:id="@+id/id_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PW:"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="345dp" />
-
-    <View
-        android:id="@+id/sign_up_nickname_underscore_view"
-        android:layout_width="0dp"
-        android:layout_height="1px"
-        android:background="#a8a8a8"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="222dp" />
+        android:fontFamily="@font/suit_bold"
+        android:text="Toxicosis"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/id_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintStart_toEndOf="@+id/id_tv"
+        app:layout_constraintTop_toTopOf="@+id/id_tv" />
 
     <TextView
+        android:id="@+id/tag1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="연락처:"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="410dp" />
+        android:layout_marginStart="24dp"
+        android:text="태그"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="431dp" />
+
+    <View
+        android:id="@+id/up_id_view"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:background="#a8a8a8"
+        app:layout_constraintBottom_toTopOf="@+id/id_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
 
     <View
         android:id="@+id/sign_up_nickname_underscore_view"
         android:layout_width="0dp"
         android:layout_height="1px"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
         android:background="#a8a8a8"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="288dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tag1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_tv" />
+
+    <View
+        android:id="@+id/under_tag"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="#a8a8a8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="593dp" />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:srcCompat="@drawable/ic_profile" />
 
     <TextView
+        android:id="@+id/profile_nickname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email:"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="480dp" />
+        android:fontFamily="@font/suit_bold"
+        android:text="중독자들"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="283dp"
+        tools:ignore="MissingConstraints" />
 
-    <View
-        android:id="@+id/sign_up_nickname_underscore_view"
-        android:layout_width="0dp"
-        android:layout_height="1px"
-        android:background="#a8a8a8"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="530dp" />
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="490dp">
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="숏츠"
+        app:chipBackgroundColor="@color/app_color"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/chip2"
+        app:layout_constraintTop_toBottomOf="@+id/tag1" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="금연"
+        app:chipBackgroundColor="@color/app_color"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="500dp" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="금주"
+        app:chipBackgroundColor="@color/app_color"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/chip2"
+        tools:layout_editor_absoluteY="545dp" />
+
+    <TextView
+        android:id="@+id/match_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="208dp"
+        android:text="관심"
+        android:textColor="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="@+id/chip"
+        app:layout_constraintStart_toEndOf="@+id/chip"
+        app:layout_constraintTop_toTopOf="@+id/chip" />
+
+    <TextView
+        android:id="@+id/match_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="208dp"
+
+        android:text="위험"
+        app:layout_constraintBottom_toBottomOf="@+id/chip3"
+        app:layout_constraintEnd_toEndOf="@+id/match_three"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/chip3"
+        app:layout_constraintTop_toBottomOf="@+id/chip2" />
+
+    <TextView
+        android:id="@+id/match_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="208dp"
+        android:text="심각"
+        android:textColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="@+id/chip2"
+        app:layout_constraintEnd_toEndOf="@+id/match_one"
+        app:layout_constraintStart_toEndOf="@+id/chip2"
+        app:layout_constraintTop_toBottomOf="@+id/chip"
+        app:layout_constraintVertical_bias="0.535" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

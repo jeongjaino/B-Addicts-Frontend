@@ -9,4 +9,7 @@
     <color name="light_purple">#FFD4A9FF</color>
     <color name="black">#FF000000</color>
     <color name="form_error">#F11818</color>
+    <color name="yellow">#82EB5A</color>
+    <color name="green">#3CA03C</color>
+
 </resources>
