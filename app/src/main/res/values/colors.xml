@@ -6,4 +6,5 @@
     <color name="gray">#FFECECEC</color>
     <color name="app_color">#FFD4A9FF</color>
     <color name="black">#FF000000</color>
+    <color name="form_error">#F11818</color>
 </resources>
