@@ -1,8 +1,18 @@
 package com.umc.addicts.data.model.auth
 
-data class RegisterRequest (
-    val id: String,
-    val password: String,
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class RegisterRequest(
+    val userId: String,
     val nickname: String,
-    val profileImage: ByteArray,
+    val password: String,
+    val image: String,
+    val toxics: List<Toxic>,
+)
+
+@Serializable
+data class Toxic(
+    val keyword: String,
+    val degree: String
 )

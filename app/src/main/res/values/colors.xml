@@ -2,7 +2,7 @@
 <resources>
     <color name="transparent">#00000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="light_gray">#FFDCDCDC</color>
+    <color name="light_gray">#FFECECEC</color>
     <color name="gray">#FFECECEC</color>
     <color name="app_color">#FF9462C5</color>
     <color name="light_purple">#FFD4A9FF</color>

@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.umc.addicts.presentation.chat.ChatCreationViewModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_chat_creation_top">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_chat_creation_targetPeriod"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:hint="2주"
+                    android:textSize="22sp"
+                    app:boxStrokeColor="@color/textfield_stroke_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_chat_creation_targetPeriod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@={viewModel.targetPeriod}" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/bt_chat_creation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:onClick="@{() -> viewModel.postChat()}"
+                    android:text="확인"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_chat_creation_targetPeriod" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_chat_creation_deadline"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:hint="2024.01.01"
+                    android:textSize="22sp"
+                    app:boxStrokeColor="@color/textfield_stroke_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_chat_creation_people_deadline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@={viewModel.time}" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_chat_creation_people_count"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:hint="최소 5명"
+                    android:textSize="22sp"
+                    app:boxStrokeColor="@color/textfield_stroke_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_chat_creation_people_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text="@={viewModel.peopleCount}"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/allergy_chip_group"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:chipSpacingHorizontal="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/drink_chip"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="음주"
+                        android:textColor="@color/chip_text_ripple_color"
+                        app:checkedIconEnabled="false"
+                        app:chipBackgroundColor="@color/chip_ripple_color" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/smoke_chip"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="흡연"
+                        android:textColor="@color/chip_text_ripple_color"
+                        app:checkedIconEnabled="false"
+                        app:chipBackgroundColor="@color/chip_ripple_color" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/sns_chip"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SNS"
+                        android:textColor="@color/chip_text_ripple_color"
+                        app:checkedIconEnabled="false"
+                        app:chipBackgroundColor="@color/chip_ripple_color" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/shorts_chip"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="숏츠"
+                        android:textColor="@color/chip_text_ripple_color"
+                        app:checkedIconEnabled="false"
+                        app:chipBackgroundColor="@color/chip_ripple_color" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/game_chip"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="게임"
+                        android:textColor="@color/chip_text_ripple_color"
+                        app:checkedIconEnabled="false"
+                        app:chipBackgroundColor="@color/chip_ripple_color" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/flour_chip"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="밀가루"
+                        android:textColor="@color/chip_text_ripple_color"
+                        app:checkedIconEnabled="false"
+                        app:chipBackgroundColor="@color/chip_ripple_color" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/caffeine_chip"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="카페인"
+                        android:textColor="@color/chip_text_ripple_color"
+                        app:checkedIconEnabled="false"
+                        app:chipBackgroundColor="@color/chip_ripple_color" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/yasik_chip"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="야식"
+                        android:textColor="@color/chip_text_ripple_color"
+                        app:checkedIconEnabled="false"
+                        app:chipBackgroundColor="@color/chip_ripple_color" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/else_chip"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="나머지"
+                        android:textColor="@color/chip_text_ripple_color"
+                        app:checkedIconEnabled="false"
+                        app:chipBackgroundColor="@color/chip_ripple_color" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/suit_bold"
+                    android:text="방 소개 "
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_chat_creation_title" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_chat_creation_title"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:hint="ex) 금연 클린 방"
+                    android:textSize="22sp"
+                    app:boxStrokeColor="@color/textfield_stroke_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView9">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_chat_creation_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:text="@={viewModel.title}"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/suit_bold"
+                    android:text="채팅방 이름"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_chat_creation_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:hint="ex) 금연 하고 싶은 사람 다 모여라 ! "
+                    android:textSize="22sp"
+                    app:boxStrokeColor="@color/textfield_stroke_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_chat_creation_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:text="@={viewModel.content}"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/suit_bold"
+                    android:text="방 정원"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chipGroup" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/suit_bold"
+                    android:text="중독 정도"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/allergy_chip_group" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_chat_creation_goal"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:hint="하루에 손 사진 한번 인증"
+                    android:textSize="22sp"
+                    app:boxStrokeColor="@color/textfield_stroke_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_chat_creation_goal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@={viewModel.goal}" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/suit_bold"
+                    android:text="방 태그"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_chat_creation_content" />
+
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/suit_bold"
+                    android:text="모집 마감일"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_chat_creation_people_count" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/suit_bold"
+                    android:text="목표 설정"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_chat_creation_deadline" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/suit_bold"
+                    android:text="목표 기간"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_chat_creation_goal" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_level_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="관심"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:textColor="@color/chip_text_ripple_color"
+                        app:checkedIconEnabled="false"
+                        app:chipBackgroundColor="@color/chip_ripple_color"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_level_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="위험"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:textColor="@color/chip_text_ripple_color"
+                        app:checkedIconEnabled="false"
+                        app:chipBackgroundColor="@color/chip_ripple_color"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_level_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="심각"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:textColor="@color/chip_text_ripple_color"
+                        app:checkedIconEnabled="false"
+                        app:chipBackgroundColor="@color/chip_ripple_color"/>
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_chat_creation_top"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/app_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/transparent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_back"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_chat_creation_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/suit_bold"
+                    android:text="채팅방 만들기"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
