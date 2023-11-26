@@ -2,10 +2,128 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main_nav"
-    app:startDestination="@id/boardFragment2">
+    app:startDestination="@id/loginFragment">
 
     <fragment
-        android:id="@+id/boardFragment2"
+        android:id="@+id/registerFragment"
+        android:name="com.umc.addicts.presentation.auth.register.RegisterFragment"
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_registerInformationFragment"
+            app:destination="@id/registerInformationFragment">
+        </action>
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerInformationFragment"
+        android:name="com.umc.addicts.presentation.auth.register.RegisterInformationFragment"
+        android:label="RegisterInformationFragment" >
+        <argument
+            android:name="id"
+            android:defaultValue=""/>
+        <argument
+            android:name="password"
+            android:defaultValue=""/>
+        <argument
+            android:name="nickname"
+            android:defaultValue=""/>
+        <action
+            android:id="@+id/action_registerInformationFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_registerInformationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.umc.addicts.presentation.auth.login.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_boardFragment"
+            app:destination="@id/boardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/boardFragment"
         android:name="com.umc.addicts.presentation.board.BoardFragment"
-        android:label="BoardFragment" />
+        android:label="BoardFragment" >
+        <action
+            android:id="@+id/action_boardFragment_to_boardDetailFragment"
+            app:destination="@id/boardDetailFragment" />
+        <action
+            android:id="@+id/action_boardFragment_to_boardCreationFragment"
+            app:destination="@id/boardCreationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatCreationFragment"
+        android:name="com.umc.addicts.presentation.chat.ChatCreationFragment"
+        android:label="ChatCreationFragment" >
+        <action
+            android:id="@+id/action_chatCreationFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_chatCreationFragment_to_chatRoomFragment"
+            app:destination="@id/chatRoomFragment" />>
+    </fragment>
+    <fragment
+        android:id="@+id/chatRoomFragment"
+        android:name="com.umc.addicts.presentation.chat.ChatRoomFragment"
+        android:label="ChatRoomFragment" >
+        <action
+            android:id="@+id/action_chatRoomFragment_to_chatCreationFragment"
+            app:destination="@id/chatCreationFragment" />
+        <action
+            android:id="@+id/action_chatRoomFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/boardDetailFragment"
+        android:name="com.umc.addicts.presentation.board.detail.BoardDetailFragment"
+        android:label="BoardDetailFragment" >
+        <argument
+            android:name="boardId"
+            android:defaultValue="0L"/>
+        <action
+            android:id="@+id/action_boardDetailFragment_to_boardFragment"
+            app:destination="@id/boardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/boardCreationFragment"
+        android:name="com.umc.addicts.presentation.board.creation.BoardCreationFragment"
+        android:label="BoardCreationFragment" >
+        <action
+            android:id="@+id/action_boardCreationFragment_to_boardFragment"
+            app:destination="@id/boardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selfDiagnosisFragment"
+        android:name="com.umc.addicts.presentation.profile.SelfDiagnosisFragment"
+        android:label="SelfDiagnosisFragment" >
+        <action
+            android:id="@+id/action_selfDiagnosisFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.umc.addicts.presentation.profile.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_selfDiagnosisFragment"
+            app:destination="@id/selfDiagnosisFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.umc.addicts.presentation.chat.ChatFragment"
+        android:label="ChatFragment" >
+        <action
+            android:id="@+id/action_chatFragment_to_chatCreationFragment"
+            app:destination="@id/chatCreationFragment" />
+        <action
+            android:id="@+id/action_chatFragment_to_chatRoomFragment"
+            app:destination="@id/chatRoomFragment" />
+    </fragment>
 </navigation>
