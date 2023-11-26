@@ -4,7 +4,12 @@
     <color name="white">#FFFFFFFF</color>
     <color name="light_gray">#FFECECEC</color>
     <color name="gray">#FFECECEC</color>
+    <color name="bold_gray">#FF868E96</color>
     <color name="app_color">#FF9462C5</color>
     <color name="light_purple">#FFD4A9FF</color>
     <color name="black">#FF000000</color>
+    <color name="form_error">#F11818</color>
+    <color name="yellow">#82EB5A</color>
+    <color name="green">#3CA03C</color>
+
 </resources>
