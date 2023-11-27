@@ -47,7 +47,7 @@
 - 개인정보 노출의 부담을 감안하여, 성별/나이의 기재 없이 익명(닉네임)으로만 활동할 수 있어요.
 <br>
 
-## 중독자들 소개
+## 🤼 팀 중독자들 소개
 <table>
   <tr>
     <td align="center"><a href="http://github.com/jeongjaino"><img src="https://avatars.githubusercontent.com/u/77484719?v=4" width="100px;" alt=""/><br /><sub><b>정진호</sub></a><br /></td>
