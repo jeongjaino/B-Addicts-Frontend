@@ -47,6 +47,29 @@
 - 개인정보 노출의 부담을 감안하여, 성별/나이의 기재 없이 익명(닉네임)으로만 활동할 수 있어요.
 <br>
 
+## 중독자들 소개
+<table>
+  <tr>
+    <td align="center"><a href="http://github.com/jeongjaino"><img src="https://avatars.githubusercontent.com/u/77484719?v=4" width="100px;" alt=""/><br /><sub><b>정진호</sub></a><br /></td>
+    <td align="center"><a href="http://github.com/s13121312"><img src="https://avatars.githubusercontent.com/u/68800497?v=4" width="100px;" alt=""/><br /><sub><b>강정민</sub></a><br /></td>
+    <td align="center"><a href="http://github.com/preferrrr"><img src="https://avatars.githubusercontent.com/u/99793526?v=4" width="100px;" alt=""/><br /><sub><b>이선호</sub></a><br /></td>
+    <td align="center"><a href="http://github.com/juwon00"><img src="https://avatars.githubusercontent.com/u/99171610?v=4" width="100px;" alt=""/><br /><sub><b>홍주원</sub></a><br /></td>
+    <td align="center"><a href="http://github.com/coffee-poter"><img src="https://avatars.githubusercontent.com/u/113098614?v=4" width="100px;" alt=""/><br /><sub><b>오정훈</sub></a><br /></td>
+    <td align="center"><a href="http://github.com/yuyu0830"><img src="https://avatars.githubusercontent.com/u/83621666?v=4" width="100px;" alt=""/><br /><sub><b>우상원</sub></a><br /></td>
+    <td align="center"><a href="http://github.com/jeongjaino"><img src="https://github.com/UMC-PKNU-Hackathon/B-Addicts-Frontend/assets/77484719/7cfa589c-23a1-48ff-a346-aed72ba80f74" width="256px;" alt=""/><br /><sub><b>양준혁(Github X)</sub></a><br /></td>
+  </tr>
+    <tr>
+    <td align="center">안드로이드</td>
+    <td align="center">안드로이드</td>
+    <td align="center">백엔드</td>
+    <td align="center">백엔드</td>
+    <td align="center">백엔드</td>
+    <td align="center">디자인</td>
+    <td align="center">기획자</td>
+  </tr>
+</table>
+<br>
+      
 ## 🤖 Android Tech Stack 
 - MVVM
 - Android App Architecture (Data <- Presentation)
