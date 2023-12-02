@@ -25,7 +25,7 @@
 
 ◌ 중독의 조건 중 하나인 신속한 피드백과 관련하여, 쇼츠는 피드백 시간이 매우 짧아 중독을 급격하게 일으킴
 
-◌ <img width="512" alt="image" src="https://file.notion.so/f/f/c2a6627d-c6b8-463b-be4e-cbaab2adbc4e/d785d7bc-586e-4cca-b521-941f1bb11c34/Untitled.png?id=2eac6882-042a-42b7-ba13-6ade58829710&table=block&spaceId=c2a6627d-c6b8-463b-be4e-cbaab2adbc4e&expirationTimestamp=1701151200000&signature=Z3on-1Jb4-M_yhcf4NRDAbPR-AH17k_3tqsZt_0BJPY&downloadName=Untitled.png">
+◌ <img width="512" alt="image" src="https://image.newsis.com/2023/02/01/NISI20230201_0001186726_web.jpg?rnd=20230201111147">
 
 (출처: 콜랩아시아)
 
