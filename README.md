@@ -56,7 +56,7 @@
     <td align="center"><a href="http://github.com/juwon00"><img src="https://avatars.githubusercontent.com/u/99171610?v=4" width="100px;" alt=""/><br /><sub><b>홍주원</sub></a><br /></td>
     <td align="center"><a href="http://github.com/coffee-poter"><img src="https://avatars.githubusercontent.com/u/113098614?v=4" width="100px;" alt=""/><br /><sub><b>오정훈</sub></a><br /></td>
     <td align="center"><a href="http://github.com/yuyu0830"><img src="https://avatars.githubusercontent.com/u/83621666?v=4" width="100px;" alt=""/><br /><sub><b>우상원</sub></a><br /></td>
-    <td align="center"><a href="http://github.com/jeongjaino"><img src="https://github.com/jeongjaino/B-Addicts-Frontend/assets/77484719/9081e3c9-4357-4eea-b4f2-7e5e2f150bcb" width="256px;" alt=""/><br /><sub><b>양준혁</sub></a><br /></td>
+    <td align="center"><a href="http://github.com/jeongjaino"><img src="https://github.com/jeongjaino/B-Addicts-Frontend/assets/77484719/9081e3c9-4357-4eea-b4f2-7e5e2f150bcb" width="128px;" alt=""/><br /><sub><b>양준혁</sub></a><br /></td>
   </tr>
     <tr>
     <td align="center">안드로이드</td>
@@ -80,10 +80,11 @@
 
 ## 🚩 서비스 IA
 <img width="512" alt="CUT_TOXIC_IA" src="https://github.com/UMC-PKNU-Hackathon/B-Addicts-Frontend/assets/77484719/8a93408e-ca86-4d11-bad0-b4c424b76ca1">
+(현재는 접근 X)
 <br><br>
 
 ## 🎨 서비스 UI/UX
-<img width="512" alt="CUT_TOXIC_UIUX" src="https://github.com/UMC-PKNU-Hackathon/B-Addicts-Frontend/assets/77484719/3b0cbd50-8ea3-4853-91ae-4e8aefc2a01a">
+<img width="512" alt="CUT_TOXIC_UIUX" src="https://github.com/jeongjaino/B-Addicts-Frontend/assets/77484719/a93a4921-287c-4d75-b76b-85dc3c6796a6">
 <br>
 
 ## 발표자료 
