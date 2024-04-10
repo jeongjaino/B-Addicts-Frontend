@@ -1,6 +1,6 @@
 # 💜 컷톡 (Cut Toxic) 💜
 <p align="center">
-<img width="256" alt="CUT_TOXIC_ICON" src="https://github.com/UMC-PKNU-Hackathon/B-Addicts-Frontend/blob/main/app/src/main/res/drawable/ic_app.png?raw=true">
+<img width="256" alt="CUT_TOXIC_ICON" src="https://github.com/jeongjaino/B-Addicts-Frontend/assets/77484719/9081e3c9-4357-4eea-b4f2-7e5e2f150bcb">
 </p>
 
 > 🏆 UMC 모여봐요 해커톤 금상 수상 <br>
@@ -56,7 +56,7 @@
     <td align="center"><a href="http://github.com/juwon00"><img src="https://avatars.githubusercontent.com/u/99171610?v=4" width="100px;" alt=""/><br /><sub><b>홍주원</sub></a><br /></td>
     <td align="center"><a href="http://github.com/coffee-poter"><img src="https://avatars.githubusercontent.com/u/113098614?v=4" width="100px;" alt=""/><br /><sub><b>오정훈</sub></a><br /></td>
     <td align="center"><a href="http://github.com/yuyu0830"><img src="https://avatars.githubusercontent.com/u/83621666?v=4" width="100px;" alt=""/><br /><sub><b>우상원</sub></a><br /></td>
-    <td align="center"><a href="http://github.com/jeongjaino"><img src="https://github.com/UMC-PKNU-Hackathon/B-Addicts-Frontend/assets/77484719/7cfa589c-23a1-48ff-a346-aed72ba80f74" width="256px;" alt=""/><br /><sub><b>양준혁(Github X)</sub></a><br /></td>
+    <td align="center"><a href="http://github.com/jeongjaino"><img src="https://github.com/jeongjaino/B-Addicts-Frontend/assets/77484719/9081e3c9-4357-4eea-b4f2-7e5e2f150bcb" width="256px;" alt=""/><br /><sub><b>양준혁</sub></a><br /></td>
   </tr>
     <tr>
     <td align="center">안드로이드</td>
